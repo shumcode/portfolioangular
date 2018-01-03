@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html ng-app="app" lang="en">
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Audiowide" rel="stylesheet">
+    <title>Christian Shumylo's Portfolio</title>
+    <link rel="stylesheet" type="text/css" href="stylesheet.css">
+</head>
+<body>
+<header>
+    <div class="header-container">
+
+<!-- Navigation Bar -->
+
+      <div class="nav">
+        <h1>Christian Shumylo</h1>
+        <div class="navbarcontainer">
+          <div class="navbar"><a href="#!/">Home</a></div>
+          <div class="navbar"><a href="#!/about">About</a></div>
+          <div class="navbar"><a href="#!/contact">Contact</a></div>
+        </div>
+      </div>
+    </div>
+</header>
+
+<ng-view></ng-view>
+
+<!-- Footer -->
+
+<footer>
+      <div class="footercontainer">
+        <p class="footer1">Check out my:</p>
+        <div id="footerimg">
+          <div class="footer2"><a href="https://github.com/shumcode" target="_blank"><img ng-src="images/githubmedium.png" id="github"></a></div>
+          <div class="footer3"><a href="https://github.com/shumcode" target="_blank"><img ng-src="images/githubsmall.png" id="github"></a></div>
+          <div class="footer2"><a href="https://www.linkedin.com/in/christianshumylo/" target="_blank"><img ng-src="images/linkedinmedium.png" id="linked"></a></div>
+          <div class="footer3"><a href="https://www.linkedin.com/in/christianshumylo/" target="_blank"><img ng-src="images/linkedinsmall.png" id="linked"></a></div>
+        </div>
+      </div>
+</footer>
+
+<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.6/angular.min.js"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.6/angular-route.min.js"></script>
+<script src="scripts/module.js"></script>
+<script src="scripts/config.js"></script>
+<script src="scripts/controller.js"></script>
+<script src="scripts/my-service.js"></script>
+<script src="scripts/components/home-component.js"></script>
+<script src="scripts/components/about-component.js"></script>
+<script src="scripts/components/contact-component.js"></script>
+</body>
+</html>

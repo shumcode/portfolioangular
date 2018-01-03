@@ -1,0 +1,334 @@
+html {
+  box-sizing: border-box;
+}
+
+.nav {
+  background-color: lightblue;
+}
+
+.nav {
+  border-radius: 5px;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  /* position: fixed;
+  top: 0;
+  width: 100%; */
+}
+
+.navbarcontainer {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+}
+
+.navbar {
+  font-size: 1.2em;
+  font-family: 'Raleway', sans-serif;
+}
+
+.navbarcontainer a {
+  text-decoration: none;
+  color: orange;
+  display: block;
+  padding: 10px;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: 'Raleway', sans-serif;
+}
+
+#page1, #page2, #page3 {
+  /* height: 1200px; */
+}
+
+.navbar:hover {
+  background-color: #7bbdff;
+  border-radius: 5px;
+}
+
+.navbar a.active {
+  background-color: #fff;
+  color: #444;
+}
+
+.heading1, .heading2 {
+  padding-left: 15px;
+}
+
+.facts, .food {
+  border-style: solid;
+  border-radius: 20px;
+  border-color: lightblue;
+  margin: 0 auto;
+  max-width: 768px;
+}
+
+.food ul li {
+  padding: 10px;
+  list-style-type: circle;
+}
+
+.facts ol li {
+  padding: 10px;
+}
+
+a {
+  transition: .35s background-color;
+}
+
+p {
+  text-align: center;
+  font-family: 'Raleway', sans-serif;
+  margin-left: 5px;
+  margin-right: 5px;
+}
+
+h1 {
+  font-family: 'Audiowide', sans-serif;
+  color: orange;
+  text-shadow: -2px 0 black, 0 1px black, 1px 0 black, 0 -2px black;
+  display: flex;
+  justify-content: center;
+}
+
+.img-container {
+  padding: .5vw;
+  flex-flow: row wrap;
+  display: flex;
+}
+
+.img-container div {
+  flex: auto;
+  width: 200px;
+  height: 100%;
+  margin: .75vw;
+  box-shadow: 6.75px 6.75px 6.75px #888888;
+  border-radius: 20px;
+}
+
+.img-container div img {
+  width: 100%;
+  height: auto;
+  border-radius: 20px;
+}
+
+img {
+  display: block;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  border-style: inset;
+  margin: 5px;
+  padding: 20px;
+  border-radius: 5px;
+}
+
+label {
+  display: flex;
+  margin-top: 20px;
+  font-family: 'Raleway', sans-serif;
+}
+
+input, textarea {
+  width: 75%;
+  height: 27px;
+  background:#efefef;
+  border:1px solid #dedede;
+  padding:10px;
+  margin-top: 3px;
+  font-size:0.9em;
+  color:#3a3a3a;
+  -moz-border-radius: 5px;
+  -webkit-border-radius: 5px;
+  border-radius: 5px;
+  font-family: 'Raleway', sans-serif;
+}
+
+textarea {
+  height: 213px;
+}
+
+button:focus, textarea:focus {
+  border: 1px solid lightblue;
+}
+
+footer {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 5px;
+}
+
+.footercontainer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+#footerimg {
+  display: flex;
+  flex-direction: row;
+}
+
+.footercontainer img:hover {
+  background-color: #7bbdff;
+}
+
+.footercontainer img {
+  border-radius: 50%;
+}
+
+.nav h1 {
+  margin: 0;
+}
+
+.submit {
+  background-color: lightblue;
+  font-family: 'Raleway', sans-serif;
+  margin-top: 10px;
+  padding: 10px 50px 10px 50px;
+  -webkit-border-radius: 5px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+@media screen and (min-width: 768px) {
+  .navbarcontainer {
+    display: flex;
+    flex-direction: row;
+  }
+  .welcome p {
+    font-size: 1.5em;
+  }
+  .contactform {
+    width: 768px;
+    margin: 0 auto;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  #page1, #page2, #page3 {
+    margin-top: 75px;
+    /* height: 1200px; */
+  }
+  .navbarcontainer {
+    order: 2;
+  }
+  .nav h1 {
+    margin-left: 10px;
+  }
+  .nav a {
+    text-align: center;
+  }
+  .nav {
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+    align-items: center;
+    position: fixed;
+    top: 0;
+    width: 100%;
+  }
+  .facts li {
+    font-size: 1.35em;
+  }
+  .food li {
+    font-size: 1.35em;
+  }
+  .heading1 h2, .heading2 h2 {
+    font-size: 1.8em;
+  }
+}
+
+@media screen and (max-width: 350px) {
+  @media screen and (max-height: 850px) {
+  .header-container h1 {
+    font-size: 18px;
+    }
+  }
+}
+
+@media screen and (max-width: 175px) {
+  .header-container h1 {
+    text-align: center;
+  }
+  .heading1 h2 {
+    font-size: 14px;
+  }
+  .heading2 h2 {
+    font-size: 14px;
+  }
+}
+
+@media screen and (max-width: 280px) {
+  .header-container h1 {
+    font-size: 18px;
+  }
+}
+
+@media screen and (max-width: 300px) {
+  .heading1, .heading2 {
+    display: flex;
+    justify-content: center;
+  }
+  .heading1 h2 {
+    font-size: 14px;
+  }
+  .heading2 h2 {
+    font-size: 14px;
+  }
+  .facts, .food li {
+    font-size: 12px;
+    padding: 0;
+  }
+}
+
+@media screen and (max-width: 270px) {
+  input, textarea {
+    font-size: 10px;
+  }
+}
+
+@media screen and (max-width: 340px) {
+   h1 {
+    font-size: 18px;
+  }
+  .heading1, .heading2 {
+    display: flex;
+    justify-content: center;
+  }
+}
+
+@media screen and (max-width: 240px) {
+  .footer1 {
+    font-size: 12px;
+    margin: auto;
+  }
+  .footer2 img {
+    display: none;
+  }
+}
+
+@media screen and (min-width: 240px) {
+  .footer3 img {
+    display: none;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .heading1, .heading2 {
+    text-align: center;
+  }
+  .heading1 {
+    margin-right: 495px;
+  }
+  .heading2 {
+    margin-right: 520px;
+  }
+}
